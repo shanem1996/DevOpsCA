@@ -8,5 +8,5 @@ pm2 stop simple_application
 
 npm install
 
-pm2 start ./bin/www --name simple_application
+pm2 start ./DevOpsCA/bin/www --name simple_application
 
