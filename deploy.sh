@@ -6,8 +6,6 @@ sudo npm install -g pm2
 
 pm2 stop simple_application
 
-cd SimpleApplication/
-
 npm install
 
 pm2 start ./bin/www --name simple_application
