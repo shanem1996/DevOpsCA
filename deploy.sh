@@ -10,5 +10,8 @@ cd DevOpsCA
 
 npm install
 
+echo $PRIVATE_KEY > privatekeysm.pem
+echo $SERVER >  server.crt
+
 pm2 start ./bin/www --name simple_application
 
