@@ -6,7 +6,7 @@ sudo npm install -g pm2
 
 pm2 stop simple_application
 
-cd SimpleApplicaiton/
+cd SimpleApplication/
 
 npm install
 
