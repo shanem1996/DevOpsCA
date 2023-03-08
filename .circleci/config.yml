@@ -8,11 +8,6 @@ workflows:
           filters:
             pull_request:
               types: [opened]
-            #branches:
-              #ignore:
-                #- no_ci
-              #only:
-                #- main
       - deploy:
           filters:
             branches:
