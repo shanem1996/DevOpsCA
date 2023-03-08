@@ -7,8 +7,9 @@ workflows:
       - build:
           filters:
             branches:
-              pull_request:
-                types: [opened, synchronize]
+              only: /.*/
+            pull_requests:
+              types: [opened, reopened, synchronize]
       - deploy:
           filters:
             branches:
