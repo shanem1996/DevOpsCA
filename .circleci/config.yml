@@ -6,9 +6,11 @@ workflows:
     jobs:
       - build:
           filters:
-            branches:
-              ignore:
-                - no_ci
+            pull_request:
+              types: open
+            #branches:
+              #ignore:
+                #- no_ci
               #only:
                 #- main
       - deploy:
