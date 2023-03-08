@@ -6,8 +6,10 @@ workflows:
     jobs:
       - build:
           filters:
+            branches:
+              ignore: '*'
             pull_request:
-              types: [opened]
+              types: [opened, synchronize]
       - deploy:
           filters:
             branches:
