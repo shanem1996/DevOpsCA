@@ -7,9 +7,10 @@ workflows:
       - build:
           filters:
             branches:
-              only: /.*/
-            pull_requests:
-              types: [opened, reopened, synchronize]
+              ignore:
+                - no_ci
+              #only:
+                #- main
       - deploy:
           filters:
             branches:
