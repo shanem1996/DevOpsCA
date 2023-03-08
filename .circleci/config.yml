@@ -7,7 +7,7 @@ workflows:
       - build:
           filters:
             pull_request:
-              types: open
+              types: [opened]
             #branches:
               #ignore:
                 #- no_ci
