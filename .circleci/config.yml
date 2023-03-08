@@ -14,10 +14,8 @@ workflows:
       - deploy:
           filters:
             branches:
-              ignore:
-                - no_ci
-              #only:
-                #- main
+              only:
+                - main
           requires:
             - build
 
